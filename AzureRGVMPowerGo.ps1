@@ -1,9 +1,9 @@
-. .\Functions\Invoke-Parallel.ps1
-
 param(
 	[string]$power,
 	[string]$azureResourceGroup
 )
+
+. .\Functions\Invoke-Parallel.ps1
 
 if (!$power){Write-host "No powerstate specified. Use -Power start|stop"}
 if (!$azureResourceGroup){Write-host "No Azure Resource Group specified. Use -azureResourceGroup 'ResourceGroupName'"}
